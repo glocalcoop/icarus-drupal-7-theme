@@ -1,0 +1,441 @@
+/**
+ * @file
+ * This is the footer for icarus-style.scss file 
+ *
+  * $computer: 1200px;
+ * $desktop: 1048px;
+ * $tabtop: 1024px;
+ * $tablet: 768px;
+ * $smaller: 590px;
+ */
+
+
+
+
+
+ #footer {
+ 	display: block;
+	width: 100%;  
+	border-top: 3px solid #636363;
+	background-color: #F5F5F5;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+	@media only screen and (min-width: $tablet + 1) {
+	
+		background-image: url('../images/footer-background.jpg');
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 970px; //720px; 
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #ffffff;
+		border-top: 3px solid #636363;
+
+	}
+
+	
+	@media only screen and (min-width: $tabtop - 24) {
+
+		height: 800px;
+
+	}
+
+}
+
+
+.footerNavigationBlock {
+
+margin-bottom: 0px;
+ h2 {display:  none;}
+}
+		//styles for footer navigation	
+
+
+	// navigation Block class. This class is defined in the module. 
+
+
+
+.fWrap {
+
+	width: 100%;
+	display: block;
+	background-color: #F5F5F5;
+
+	@media only screen and (min-width: $tablet + 1) {
+
+		width: 77%; //78% width needs to be changed to accomedate at least firefox, chrome, safari
+		display: block;
+		margin: auto;
+		background-color: #F5F5F5;
+		height: 280px; //20%;
+		padding-left: 2%;
+		padding-top: 2%;
+		padding-bottom: 15px;
+	
+	}
+
+	div {
+
+		//float: left;
+		font-family: $typewriterBackup;
+		font-weight: normal;
+		color: #4D4D4D;
+		font-size: 60%;
+		line-height: 2.5em;
+		padding-left: 0;
+		text-transform: uppercase;
+
+		@media only screen and (min-width: $tablet + 1) {	
+
+			font-size: 50%;
+			font-weight: normal;
+			padding-right: 3%;
+ 			float: left;
+ 			text-indent: 0px;
+ 			width: 17%;
+
+
+		}
+
+
+		p {
+			border-bottom: 1px solid #d8d8d8;
+			display: block;
+			font-family: $typewriterBackup;
+			font-size: 11px;
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+			text-indent: 6px;
+			
+			@media only screen and (min-width: $tablet + 1) {	
+
+				text-indent: 0px;
+
+			}
+
+		}
+
+		ul {
+
+			list-style: none;
+			list-style-type: none;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 0px;
+			margin-top: 0px;
+
+			&:last-child {
+
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+			}
+
+			
+			
+
+			li  {
+
+				
+				display: block;
+				width: 100%;	
+
+				a { 
+
+					text-indent:  6px;
+					padding-top: 5px;
+					padding-bottom: 5px;
+
+					@media only screen and (min-width: $tablet + 1) {
+
+						text-indent: 0px;
+					}	
+
+				}
+
+			}
+			
+		
+		}
+
+		ul li > a {
+
+			border-bottom: 1px solid #d8d8d8;
+			width: 100%;
+			display: block;
+			font-family: $typewriterBackup;
+			font-weight: normal;
+			color: #4D4D4D;
+			font-size: 11px;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			@media only screen and (min-width: $tablet + 1) {	
+				
+				&:hover {
+
+				color: #000;
+				background-color: $icarus-secondary-hover;
+
+			    }
+			}
+		}
+
+	}
+}
+
+
+
+// styles for Emergency Tool box in the footer
+
+//Emergancy Tool Kit footer Block 
+
+.etk {
+
+	h2 {display: none;}
+
+	margin-bottom: 0px;
+}
+
+.footerEtk {
+
+display: block;
+background-image: url('../images/etk-v3.jpg');
+background-position: top left;
+background-repeat: no-repeat;
+background-color:  $etk-color;
+margin: auto;
+min-height: 425px;
+padding-left: 6px;
+padding-right: 6px;
+
+	@media only screen and (min-width: $tablet + 1) {
+	
+		width: 78%;
+		height: 465px;
+
+		}
+
+	@media only screen and (min-width: $tabtop - 24) {
+
+		height: 320px;
+		min-height: 320px;
+	}
+
+}
+
+
+.etktext {
+
+//float: left;
+height: auto;
+width: 100%;
+
+	p {
+		color: #999999;
+		font-family: $base-font-family;
+		font-size: 80%;
+		line-height: 21px;
+		margin-bottom: 0px;
+
+	}
+
+
+	@media only screen and (min-width: $tabtop - 24) {
+
+		float: left;
+		width: 60%;
+		margin-left: 2%
+
+	}
+
+}
+
+
+ h6 {
+
+font-family: $typewriterBackup;
+font-size: 95%;
+color: #cccccc;
+border-bottom: 1px solid #ffffff;
+text-transform: uppercase;
+margin-top: 0px;//95px;//75px;
+margin-bottom: 10px;
+font-weight: normal;
+padding-top: 95px;
+
+		}
+
+
+
+			
+
+
+// FOOTER: EMERGENCY TOOL KIT
+
+.etkTools {
+
+
+	//float: left;
+	width: 100%;
+	background-color: $etk-color;
+	display: block;
+	padding-bottom: 10px;
+
+	@media only screen and (min-width: $tabtop - 24) {
+
+	float: left;
+	width: 28%;
+	margin-left: 60px;
+	margin-top: 85px;
+	}
+
+	
+
+	h6 {
+
+		font-family: $typewriterBackup;
+		font-size: 95%;
+		color: #cccccc;
+		border-bottom: 1px solid #ffffff;
+		text-transform: uppercase;
+		margin-bottom: 0px;
+		display: block;
+		margin-top: 0px;
+		padding-top: 10px;
+
+
+	}
+
+	
+
+	ul {
+
+	list-style: none;
+	list-style-type: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0px
+
+
+	}
+
+	ul li > a {
+
+	border-bottom: 1px solid #d8d8d8;
+	width: 100%;
+	display: block;
+	font-family: $typewriterBackup;
+	font-weight: normal;
+	color: #999999;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 32px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size:  11px;
+	
+		
+			&:hover {
+
+				@media only screen and (min-width: $tablet + 1) {
+
+					color: #000;
+					background-color: $icarus-secondary-hover;				
+				}
+			}
+		
+		 
+
+	}
+
+}
+
+// CREATIVE COMMONS LICENSE 
+
+.footerLicense > h2 {
+
+	display: none;
+}
+
+.ccLicense {
+
+	width: 100%;
+	
+	margin: auto;
+	background-color: #545454;
+	display: block;
+
+	@media only screen and (min-width: $tablet + 1) {
+	
+		width: 79.5%;
+		padding-bottom: 20px;
+	}		
+	
+	@media only screen and (min-width: $tabtop) {
+	
+		width: 79.2%;
+		padding-bottom: 20px;
+	}		
+
+
+	@media only screen and (min-width: $computer) {
+	
+		width: 79%;
+		padding-bottom: 20px;
+	}		
+
+
+}
+
+.ccWrap  {
+
+	margin: auto;
+	display: block;
+	width: 95%;//56%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	@media only screen and (min-width: $tablet + 1) {
+
+		width: 56%
+
+	}
+}
+
+.ccImage  {
+
+	padding-right: 30px; 
+	margin-top: 15px;
+
+	img {
+		float: left;
+		width: auto;
+		height: auto;
+	}
+
+	
+}
+
+.ccText > p {
+
+	
+
+	font-family: $base-font-family;
+	font-size: 12px;
+	color: #999999;
+	line-height: 15px;
+	margin-left: 92px;
+	margin-top: 6px;
+	word-wrap: normal;
+	display: block;
+
+	a {
+
+	text-decoration: none;
+	color: #ffffff;
+	} 
+	 
+}
+

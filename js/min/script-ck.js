@@ -1,0 +1,1 @@
+!function(t,i,o,u,a){i.behaviors.my_custom_behavior={attach:function(t,i){}}}(jQuery,Drupal,this,this.document);

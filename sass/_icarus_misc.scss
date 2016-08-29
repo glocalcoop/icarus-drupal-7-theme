@@ -1,0 +1,43 @@
+/**
+ * @file
+ * This is the Micellaneous file and holds an assortment of different things and odds and ends. 
+ * 
+ * 
+ */
+
+
+
+/*
+
+$computer: 1200px;
+$desktop: 1048px;
+$tabtop: 1024px;
+$tablet: 768px;
+$smaller: 590px;
+
+
+*/
+
+// JQUERY TRIGGERS
+
+
+.JBox {
+
+
+
+		 @media screen and ( max-width: $tablet) {
+
+		 	width: 768px;
+
+		 }
+
+		 @media screen and ( max-width: $tablet + 1) {
+
+		 	min-width: 769px;
+		 	width: 100%;
+
+		 }
+
+
+
+}

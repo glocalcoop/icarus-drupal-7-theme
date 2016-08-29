@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$(".resButton").click(function(){"none"===$("#navigation").css("display")?$("#navigation").css("display","block"):$("#navigation").css("display","none")}),$("#navigation li").hover(function(){$(this).children(".menu").show()},function(){$(this).children(".menu").hide()}),$(".JBOX").width()>=768&&$("ul.menu").show()});

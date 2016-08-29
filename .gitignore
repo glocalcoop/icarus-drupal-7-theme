@@ -1,0 +1,10 @@
+# General
+.DS_Store
+*.zip
+*.sql
+*.codekit
+*.psd
+*.cache
+
+# Dependencies
+node_modules/

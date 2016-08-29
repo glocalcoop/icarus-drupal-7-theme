@@ -1,0 +1,94 @@
+/**
+ * @file
+ * This is the Header for icarus-style.scss file 
+ *
+ */
+
+ #header {
+
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.head-image { 
+
+	display: block;
+	width:  100%;
+
+	img { 
+
+		width: 100%;
+		height: auto;
+
+	}
+
+	.topImage {
+
+     	@media screen and ( max-width: $tablet) {
+
+         	display: none;
+        }
+
+        @media screen and ( min-width: $tablet + 1) {
+
+         	display: block;
+        }
+
+	}
+
+
+
+
+	.bottomImage {
+
+		@media screen and ( max-width: $tablet) {
+
+	    	display: block;
+	    }
+
+	    @media screen and ( min-width: $tablet + 1) {
+
+         	display: none;
+        }
+	}
+
+}
+
+
+.header { 
+
+	width: auto; 
+	line-height: 0px;
+	border-bottom: 3px solid #4D4D4D; 
+
+	@media screen and ( min-width: $tablet) {
+
+      margin-top: 50px;
+	
+	}
+
+    @media screen and ( max-width: $tablet) {
+
+      margin-top: 0px;
+   
+    }
+	
+	.headerBlock {
+
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+	//logo written
+	.header__name-and-slogan { 
+
+		display: block;
+	}
+
+	//logo image
+	#logo {
+
+		display: block;
+	}
+}

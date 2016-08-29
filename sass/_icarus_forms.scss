@@ -1,0 +1,115 @@
+/* form styles here 
+*   author: Andrew & Manu 
+*   email: working on it.
+*   
+*   additional comments: 
+* increase the height
+* 
+*   
+*/
+
+
+/* .class #id */
+
+/* form container */
+
+.pad {
+
+	margin: auto;
+	width: 500px;
+	
+	
+}
+
+/* message -- text area */
+
+#edit-message {
+	
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #f5f5f5;
+	border-left: none;
+	border-right: none;
+	text-indent: 5px;
+	padding-top: 10px;
+
+	
+	background: -webkit-linear-gradient(#ffffff, #f5f5f5); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#ffffff, #f5f5f5); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#ffffff, #f5f5f5); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#ffffff, #f5f5f5); /* Standard syntax */
+
+	
+}	
+
+ /* name -- text area */
+ /* email address -- text area */
+ /* subject -- text area */
+
+
+
+#edit-subject, #edit-mail, #edit-name { 
+	
+	height: 30px;
+	
+	padding-top: 10px;
+
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #EAE9E8;
+	border-left: none;
+	border-right: none;
+	text-indent: 5px;
+	
+	background: -webkit-linear-gradient(#ffffff, #f5f5f5); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#ffffff, #f5f5f5); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#ffffff, #f5f5f5); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#ffffff, #f5f5f5); /* Standard syntax */
+	
+}
+
+
+
+
+#edit-subject, #edit-mail, #edit-name, #edit-message:focus {
+
+  background: -webkit-linear-gradient(#f5f5f5, #ffffff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f5f5f5, #ffffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f5f5f5, #ffffff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f5f5f5, #ffffff); /* Standard syntax */
+
+
+
+}
+
+
+
+// submit button -- look into vendors for focus stage
+
+#edit-submit {
+
+	padding: 8px 11px;
+	
+	border-bottom: 1px solid #4d4d4d;
+	border-top: 1px solid #cccccc;
+	border-left: none;
+	border-right: none;
+	
+
+	background: -webkit-linear-gradient(#f5f5f5, #d4cfc9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #d4cfc9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #d4cfc9); /* Standard syntax */
+  
+
+}
+
+
+
+#edit-submit:focus {
+
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #4d4d4d;
+	
+	background: -webkit-linear-gradient(#d4cfc9, #f5f5f5); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#d4cfc9, #f5f5f5); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#d4cfc9, #f5f5f5); /* Standard syntax */
+  
+}

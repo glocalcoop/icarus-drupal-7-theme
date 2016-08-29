@@ -1,0 +1,57 @@
+/**
+ * @file
+ * 
+ * 1048 and 768 screens
+ * 
+
+
+ */
+
+@media screen and (min-width: 689px) { 
+
+
+    font-size: 1em;
+    line-height: 1.5em
+}   
+
+
+@media screen and (min-width: $tablet + 1) {
+
+#navigation {
+
+    font-size:  13px;
+    line-height: 16px;
+    
+        .menu {
+
+            li {
+
+                    width: 16%;
+
+                &:last-child {
+
+                     width: 20%;
+                }
+
+                a { 
+                        border-right:  1px solid #4D4D4D;
+                        height: 35px;
+                        text-align: center;
+                        display: block;
+                        width: 100%; 
+                        padding-top: 15px;
+                     
+                }
+            }
+        }  
+    }
+
+
+    #main { padding-top: 0px;}
+
+
+}
+
+
+
+

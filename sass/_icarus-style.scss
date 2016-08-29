@@ -1,0 +1,377 @@
+/**
+ * @file
+ * This is the file with all the styles for this theme/
+ * to create an alternative skin, copy this file and replace below with your own styles.
+ * 
+ */
+
+ // GLOBAL
+
+
+body {
+}
+
+
+// HEADER STYLES 
+
+
+@import "icarus_header";
+
+
+// NAVIGATION STYLES
+
+@import "icarus_navigation";
+
+// CONTENT 
+
+#main { 
+
+	padding-top:0px; 
+
+}
+
+ div#content.column {
+
+	width: 65%;
+	background-color: #FFFFFF;
+	padding-right: 35px;
+	padding-left: 35px;
+	font-size: 100%;
+	color: #4D4D4D;
+	line-height: 150%;
+
+	 h6 {
+
+	 	color: #4D4D4D;
+	 }
+	
+	 @media screen and ( max-width: $tablet) {
+
+	 	width: 100%;
+	 }
+
+
+	// typography
+
+
+
+	// aritcles on the homepage
+
+	article > :first-child {
+
+			margin-top: 20px;
+	}
+
+	// article titles
+
+	.node-title {
+
+	  	line-height: 1.4em;
+
+	  	@media screen and ( max-width: $tablet) {
+
+	  		line-height: 1.1em;
+
+	  	}
+	
+	}
+
+	.node-teaser {
+
+		border-bottom: 1px solid #DBDBDB;
+		padding-bottom: 18px;
+		padding-top: 15px;
+
+	}
+
+
+	.field-name-field-tags a:hover, 
+	.submitted a:hover,
+	ul.links a:hover { }
+
+ 
+	// sections
+
+	.field-type-taxonomy-term-reference {
+	    display:  block;
+	    .field-item {
+		display: inline;
+	    }
+	    a {
+		color: $icarus-faded-red;
+		float: left;
+		padding: 0 5px;
+		&:hover {
+		    color: $icarus-black;
+		}
+	    }
+	}
+
+
+	
+}  
+
+	// STYLES FOR NODES
+
+	li.node-readmore a {
+
+		color: $icarus-faded-red;
+
+		&:hover {
+
+			color: $icarus-black;
+		}
+
+		&:visited {
+
+			color: $icarus-faded-red;
+		}
+
+	}
+
+
+// aritcles on the homepage -- continued
+article.node-teaser { 
+
+	//images
+ 	img {
+
+ 	float: left;
+
+ 	padding-right: 35px;
+ 	}
+
+	//text
+	 p {
+
+
+	}
+}
+
+// BYLINE FOR AUTHORS, DATE, ETC. 
+
+span.user-picture {
+
+	img { 
+
+		width: 6%;
+		height: auto;
+	}
+}
+
+
+.node-teaser .submitted  { display: none;}
+
+
+
+
+//comments 
+
+ul.links li.comment_forbidden { display: none;}
+
+
+#page-title {
+
+	font-size: 1.5em;
+}
+/*
+*  	SECOND SIDEBAR ( RIGHT SIDE )
+*
+*
+*
+*/
+
+#main > aside > section { 
+
+	margin-left: 65%;
+	width: 35%; 
+	background-image: url('../images/sidebar-bk.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: #ffffff;
+	font-family: $font-side-bar;
+	font-size: 95%;
+
+	 @media screen and ( max-width: $tablet) {
+
+	 	width: 100%;
+	 	margin-left: 0px;
+	 	clear: left;
+	 	border-top:  1px solid #4D4D4D;
+	 	font-size: 100%;
+	 	padding-right: 0px;
+	 	padding-left: 0px;
+	 	margin-left: 0px;
+	 	margin-right: 0px;
+	 	background-size: 100%;
+
+	 }
+
+
+	.block { 
+	
+		width: 80%; 
+		margin-left: 10%;
+		margin-top: 4%;
+	}
+
+	.block > h2 {
+		font-size: 1em;
+		border-bottom: 1px solid #d8d8d8;
+		
+
+		}
+
+	.block > p {
+
+		font-size: .8em;
+	}
+
+
+	//BLOCK CONTAINER //
+
+	.sideBarWrap {
+
+		background-color: #FFFFFF;
+		display: block;
+		height: auto;
+
+		border-bottom: 1px solid #d8d8d8;
+
+		ul {
+
+			padding-top: 15px;
+			padding-bottom: 15px;
+			list-style: none;
+			list-style-type: none;
+			margin: 0px;
+		}
+
+		li {
+
+			margin-bottom: 10px;
+
+			a {
+
+			font-family: $typewriterBackup;
+			font-size: 12px;
+			color: $icarus-faded-red;
+			padding-left: 0px;
+			text-transform: uppercase;
+			text-decoration: none;
+			line-height: 20px;
+			margin-left: 0px;
+			padding-right: 15px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-weight: normal;
+
+				&:hover {
+
+					color: #000;
+					background-color: $icarus-secondary-hover;
+
+				    }
+
+				img {
+
+					width: 90%;
+				}
+			}
+
+
+			//a images
+
+			.pubImg {
+
+				&:hover { 
+
+					@include opacity(60);
+					background-color: #FFFFFF;
+				}
+			}
+
+		}	
+	}
+
+	// Icons  -- 1  
+	.sideBarWrapIcon {
+
+		background-color: #FFFFFF;
+		display: block;
+		height: 70px;
+		padding: 0px;
+		border-bottom: 1px solid #d8d8d8;
+
+
+		@media screen and ( max-width: $desktop + 82)  and (min-width: $tablet) {
+
+			height: 100px;		
+		}
+
+
+		ul {
+			margin: 0px;
+			padding-top: 20px;
+			padding-bottom: 0px;
+			list-style: none;
+			list-style-type: none;
+
+		}
+
+		li { 
+
+			float: left;
+
+			a {
+
+				padding-left: 0px;
+			line-height: 25px;
+			margin-left: 8px;
+			padding-right: 6px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+
+
+	
+			 
+
+
+				&:hover {
+
+					@include opacity(30);
+				}
+
+				img {
+					width: 30px;
+					width-max: 42px;
+					height: auto;
+
+				}
+			
+			}
+
+		}
+
+	}
+
+}
+
+
+//
+// F -  FOOTER  STYLESHEET
+//
+@import "icarus_footer";
+
+
+// 
+// forms 
+//
+
+@import "icarus_forms"; 
+
+//
+// MISCELLANEOUS
+//
+
+@import "icarus_misc ";
