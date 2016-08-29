@@ -121,7 +121,9 @@
     <?php if ($sidebar_first || $sidebar_second): ?>
       <aside class="sidebars">
         <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
+        <section class="region region-sidebar-second column sidebar">
+            <?php print $sidebar_second; ?>
+        </section>
       </aside>
     <?php endif; ?>
 
